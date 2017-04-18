@@ -1,5 +1,9 @@
 # React App
 
+2. Conditions / Conséquences
+2. Répétitions
+3. Exceptions
+
 ### Facebook
 ![facebook](readme/facebook.png)
 =============================
