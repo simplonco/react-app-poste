@@ -1,0 +1,40 @@
+{
+  "datas" :[
+    {
+      "name" : "sac",
+      "price": 110
+    },
+    {
+      "name" : "bottes",
+      "price": 90
+    },
+    {
+      "name" : "manteau",
+      "price": 60
+    },
+    {
+      "name" : "pantalon",
+      "price": 30
+    },
+    {
+      "name" : "shirt",
+      "price": 10
+    },
+    {
+      "name" : "chapeau",
+      "price": 20
+    },
+    {
+      "name" : "basket",
+      "price": 80
+    },
+    {
+      "name" : "chaussettes",
+      "price": 5
+    },
+    {
+      "name" : "pull",
+      "price": 35
+    }
+  ]
+}
