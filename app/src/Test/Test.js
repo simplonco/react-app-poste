@@ -56,8 +56,9 @@ class Test extends Component {
     // On peut écrire du html directement dedans parce-que c'est un fichier jsx
     // JSX c'est une syntaxe qui a été créée par react
     // Si je veux écrire du js, je dois l'entourer de 2 accolades
-    // J'tulise className plutot que class
+    // J'utilise className plutot que class
     // Toujours besoin d'un élémént HTML unique, un seul parent, à la racine une sorte de "wrapper" qui englobe le reste
+    // Ca peut etre une div ou autre.
     return (
 
       <div className="Test">
