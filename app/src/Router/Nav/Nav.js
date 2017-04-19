@@ -1,8 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Nav = () => (
   <div>
-    Ma nav.
+    <Link to="/about"> Go to about </Link>
   </div>
 );
 
