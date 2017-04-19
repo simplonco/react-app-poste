@@ -34,26 +34,18 @@ class Shop extends Component {
     });
   }
 
-  // addToCart = (productName, productPrice) => {
-  //   // Il y a deja des bottes dans mon panier
-  //   // let newCart = [ {name: 'bottes', price: 108} ]
-  //   let newCart = this.state.cart;
-  //   // newCart -> [{name: 'bottes', price: 108}, {name: 'sac', price: 132}]
-  //   newCart.push({
-  //     name: productName,
-  //     price: productPrice
-  //   });
-  //   // J'actualise mon state avec mon nouveau panier.
-  //   this.setState({cart: newCart});
-  // }
-
   // J'ajoute des produits à mon panier
-  addToCart = (productPrice) => {
+  addToCart = (productName, productPrice) => {
     // je declare une variable newCart qui va prendre la valeur de mon panier actuel
+    // vide ou déjà rempli : let newCart = [ {name: 'bottes', price: 108} ]
     let newCart = this.state.cart;
-    // Je rajoute le nouveau prix du produit à mon panier
-    newCart.push(productPrice);
+    // Je rajoute le nouvel objet du produit que je viens de cliquer à mon panier
+    newCart.push({
+      name: productName,
+      price: productPrice
+    });
     // J'actualise mon state avec le nouveau panier
+    // this.state.cart -> [{name: 'bottes', price: 108}, {name: 'sac', price: 132}]
     this.setState({cart: newCart});
   }
 
@@ -72,9 +64,11 @@ class Shop extends Component {
 
   consoleProductName = (productName) => {
     // Cette fonction doit console.log le nom d'un produit
+    console.log(productName);
     // Il faudra l'ajouter en props à chaque <Product console={this.consoleProductName}/>
     // Dans le component Product on va créer une fonction pour relayer le nom du produit
     // Cette fonction va appeler this.props.console avec le bon argument (this.props.name)
+
   }
 
 
@@ -86,12 +80,12 @@ class Shop extends Component {
   render () {
     return (
       <div className="shop">
-        <Cart click={this.state.click}/>
+        <Cart cart={this.state.cart} click={this.state.click}/>
         {
           /* On passe à l'enfant la fonction d'incrémenter le click, chaque produit aura accés à cette fonction */
           /* On passe la fonction de rajouter au panier à l'enfant */
           this.state.products.map(
-            (product, i) => <Product key={i} price={product.price} name={product.name} add={this.addToCart} increment={this.incrementClick}/>
+            (product, i) => <Product key={i} price={product.price} name={product.name} add={this.addToCart} increment={this.incrementClick} console={this.consoleProductName}/>
           )
         }
       </div>
