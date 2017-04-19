@@ -7,7 +7,7 @@ class Product extends Component {
       <div className="product">
         {this.props.name}<br />
         {this.props.price * 1.2}<br />
-        <button type="button">Ajouter au panier</button>
+        <button type="button" onClick={this.props.add}>Ajouter au panier</button>
       </div>
     )
   }

@@ -19,6 +19,8 @@ class Shop extends Component {
   constructor (props) {
     super(props);
     this.state = {};
+    // On peut aussi bind la fonction ainsi :
+    // this.changeChild = this.changeChild.bind(this);
   }
 
   componentWillMount () {
@@ -29,13 +31,17 @@ class Shop extends Component {
     });
   }
 
+  changeChild = () => {
+    console.log('Je peux communiquer via le parent');
+  }
+
   render () {
     return (
       <div className="shop">
         <Cart />
         {
           this.state.products.map(
-            (product, i) => <Product key={i} price={product.price} name={product.name}/>
+            (product, i) => <Product key={i} price={product.price} name={product.name} add={this.changeChild}/>
           )
         }
       </div>
