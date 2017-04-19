@@ -2,12 +2,17 @@ import React, {Component} from 'react';
 
 class Product extends Component {
 
+  transferAdd = () => {
+    // this.props.add('sac', 132)
+    this.props.add(this.props.price);
+  }
+
   render () {
     return (
       <div className="product">
         {this.props.name}<br />
-        {this.props.price * 1.2}<br />
-        <button type="button" onClick={this.props.add}>Ajouter au panier</button>
+        {this.props.price}<br />
+        <button type="button" onClick={this.transferAdd}>Ajouter au panier</button>
       </div>
     )
   }

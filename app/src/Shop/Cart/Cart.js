@@ -6,7 +6,7 @@ class Cart extends Component {
     return (
       <div className="cart">
         CART
-        <div>Total : {}</div>
+        <div>Total : {this.props.click}</div>
       </div>
     )
   }
