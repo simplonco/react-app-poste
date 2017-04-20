@@ -1,0 +1,46 @@
+{
+  "trips": [
+    {
+      "place": "Croatie",
+      "url": "https://www.hirerentalcars.com/wp-content/uploads/2016/02/02-croatia-rentacar.jpg",
+      "description": "La Croatie, en forme longue la république de Croatie, en croate Hrvatska et Republika Hrvatska, est un pays d'Europe du Sud-Est qui s'étend de l'extrémité orientale des Alpes...",
+      "likes": 3
+    },
+    {
+      "place": "Inde",
+      "url": "http://st1.photogallery.ind.sh/wp-content/uploads/indiacom/jama-masjid-in-delhi-the-largest-mosque-in-india-201604-1459859035.jpg",
+      "description": "L'Inde, en forme longue la République de l'Inde est un pays du sud de l'Asie qui occupe la majeure partie du sous-continent indien...",
+      "likes": 4
+    },
+    {
+      "place": "Puerto Rico",
+      "url": "https://s-media-cache-ak0.pinimg.com/736x/9b/d3/c3/9bd3c360f0285897fa0bddfacb5c2d6e.jpg",
+      "description": "Porto Rico ou Puerto Rico est un territoire non incorporé des États-Unis avec un statut de commonwealth. Située dans les Grandes Antilles...",
+      "likes": 14
+    },
+    {
+      "place": "Italie",
+      "url": "http://games.vionm.com/wp-content/uploads/2016/09/Manarola-Cinque-Terre.jpg",
+      "description": "L'Italie, en forme longue la République italienne, est un pays d'Europe du Sud correspondant physiquement à une partie continentale, une péninsule située au centre de la mer Méditerranée...",
+      "likes": 9
+    },
+    {
+      "place": "Peru",
+      "url": "http://st1.photogallery.ind.sh/wp-content/uploads/indiacom/a-closer-click-of-machu-picchu-in-cusco-region-of-peru-201605-1463639238.jpg",
+      "description": "Le Pérou, en forme longue la République du Pérou, en espagnol Perú et República del Perú, en quechua Piruw et Piruw Republika et en aymara Piruw et Piruw Suyu...",
+      "likes": 11
+    },
+    {
+      "place": "Brésil",
+      "url": "https://s-media-cache-ak0.pinimg.com/736x/58/04/75/580475c1b7ddd90f0ef5c40511a95897.jpg",
+      "description": "Le Brésil, dans sa forme longue République fédérative du Brésil, est le plus grand État d’Amérique latine...",
+      "likes": 5
+    },
+    {
+      "place": "Slovénie",
+      "url": "http://www.rearviewmirror.tv/wp-content/uploads/2012/10/piran9_thumb.jpg",
+      "description": "La Slovénie, en forme longue la République de Slovénie, en slovène Slovenija et Republika Slovenija, est un pays d’Europe centrale et membre de l'Union européenne...",
+      "likes": 7
+    }
+  ]
+}
