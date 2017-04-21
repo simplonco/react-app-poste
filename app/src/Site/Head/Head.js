@@ -11,7 +11,7 @@ class Head extends Component {
   render() {
     return (
       <div>
-        <Image  src={landscape} dimmer/>
+        <Image  src={landscape}/>
         <Segment basic>
           <Header as="h2" color="grey">Mon blog de voyage</Header>
         </Segment>

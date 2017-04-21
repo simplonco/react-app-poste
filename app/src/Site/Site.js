@@ -1,4 +1,10 @@
 import React, {Component} from 'react';
+import {Router, Route} from 'react-router';
+import createBrowserHistory from 'history/createBrowserHistory';
+
+import axios from 'axios';
+
+const history = createBrowserHistory();
 
 // Quand j'utilise Semantic je dois :
 // 1. installer semantic-ui-react et semantic-ui-css
@@ -10,16 +16,24 @@ import 'semantic-ui-css/semantic.min.css';
 import Head from './Head/Head.js';
 import Items from './Items/Items.js';
 import Nav from './Nav/Nav.js';
+import About from './About/About.js';
+import User from './User/User.js';
+
 
 // Déclarer la Class de notre site.<
 class Site extends Component {
+
   render () {
     return (
-      <div>
-        <Head/>
-        <Nav />
-        <Items/>
-      </div>
+      <Router history={history}>
+        <div>
+          <Route path="/" component={Head}/>
+          <Route path="/" component={Nav} />
+          <Route path="/" component={About}/>
+          <Route path="/gallery" component={Items}/>
+          <Route path="/user" component={User}/>
+        </div>
+      </Router>
     )
   }
 }

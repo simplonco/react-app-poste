@@ -10,7 +10,9 @@ import React, { Component } from 'react';
 // import Test from './Test/Test.js';
 // import Shop from './Shop/Shop.js';
 
-import RouterComponent from './Router/Router.js'
+//import RouterComponent from './Router/Router.js'
+//import SemanticComponent from './Semantic/Semantic.js';
+import Site from './Site/Site.js';
 
 import logo from './logo.svg';
 import './App.css';
@@ -23,7 +25,7 @@ class App extends Component {
           /*le Router a besoin d'une div unique comme enfant.
           cette div contiendra toutes nos routes.*/
         }
-        <RouterComponent />
+        <Site />
         {
           /* Pour commenter du JSX c'est comme du CSS */ 
           /* <Test quoi="react" comment="bien"/> */
