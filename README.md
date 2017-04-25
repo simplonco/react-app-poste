@@ -113,8 +113,36 @@ Puis les inclure dans le render.
 <Link to="/">
 ```
 
+## Semantic
 
-=============================================
+Il faut d'abord installer le module semantic
+```
+npm i -S semantic-ui-react semantic-ui-css
+```
+
+Importer le css dans le fichier d'entrée de l'app (app/src/index.js)
+```
+import 'semantic-ui-css/semantic.min.css';
+```
+
+Puis pour chaque fichier où j'utilise un component semantic ne pas oublier d'importer ce component.
+En début de fichier :
+```
+import {Button} from 'semantic-ui-react';
+```
+
+Dans le render :
+```
+<Button></Button>
+```
+
+## App
+
+Vous pouvez trouver un exemple regroupant les autres dans app dans src/Site
+
+## Un exercice pour apprendre à découper des components
+
+Mais aussi comprendre quand utiliser des méthodes comme `map`, des conditions, définir ce qui sera passé comme props dans des éléments qui se répètent.
 
 Essayez de trouver dans les images suivantes des :
 
