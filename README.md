@@ -67,7 +67,8 @@ J'appelle cette fonction dans un élément du render de ChildA.
 <div onClick={this.props.functionName}></div>
 ```
 
-==========================================================
+=============================================
+
 Essayez de trouver dans les images suivantes des :
 
 1. Conditions / Conséquences
