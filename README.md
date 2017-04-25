@@ -150,16 +150,10 @@ Essayez de trouver dans les images suivantes des :
 2. Répétitions
 3. Exceptions
 
-### Facebook
-![facebook](readme/facebook.png)
-=============================
 ### Twitter
 ![facebook](readme/twitter.png)
 =============================
-### Youtube
-![facebook](readme/youtube.png)
-=============================
-### Player
+### Youtube Player
 ![facebook](readme/player.png)
 =============================
 ### Soundcloud
