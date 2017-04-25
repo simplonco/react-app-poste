@@ -95,7 +95,6 @@ Le Router n'accepte qu'un enfant unique, il faut donc englober les components Ro
 Les components Redirect permettent de rediriger vers un chemin, c'est très pratique si on veut afficher du contenu selon une condition. Par exemple si un utilisateur est connecté.
 ```
 {
-  /* Conditionnal rendering : je n'affiche que via une condition */
   this.state.userConnected ? (
     <Redirect to="/home" />
   ) : (
